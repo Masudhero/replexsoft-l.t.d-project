@@ -1,54 +1,70 @@
 body{
-    font-family: 'Croissant One', cursive;
+    /* font-family: 'Croissant One', cursive;
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace; */
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary: #404040;
+    --secondary: #0C8281;
+    --blue-light: #0C8281;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #d8d8d8;
+    --gray-light: #E74860;
+    --dark-gray: #E9596F;
+    --red: #fe0000;
+  }
 .container{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 /* THIS IS HEADER SECTION STYLE START */
 .header-section{
     width: 100%;
     display: flex;
     justify-content: space-between;
-
+    vertical-align: middle;
+    height: 100px;
+}
+.header-img{
+    margin-top: 12px;
+    margin-left: 10px;
 }
 .header-img img{
-    width: 100px;
+    width: 115px;
+    height: 75px;
 }
-.header-list-item{
-    margin-right: 310px;
-    margin-top: 20px;
-}
+.header-list-item {
+    margin-top: 30px;
+    margin-right: 260px;
+  }
 .header-list-item ul li{
     display:inline-block;
 }
 .header-list-item ul li a{
     display: inline-block;
     text-decoration: none;
-    padding: 15px 10px;
-    color: #2C2C2C;
-    font-size: 18px;
+    padding: 10px 14px;
+    color: var(--primary);
+    font-size: 15px;
     list-style: none;
 }
-.header-button{
-    background-color: #0C8281;
+.header-button {
+    background-color: var(--secondary);
     height: 30px;
-    margin-top: 30px;
     border-radius: 10px;
-    color: #ffff;
+    color: var(--white);
     padding: 5px 10px;
-    border: 1px solid blue;
-}
+    border: 1px solid var(--blue-light);
+    margin-top: 35px;
+  }
 /* header section style end */
 /* THIS IS BANNER SECTION START */
 .banner-section{
@@ -63,10 +79,224 @@ body{
 }
 .banner-title {
     position: absolute;
-    top: 330px;
-    left: 810px;
-    color: #0C8281;
-    font-size: 18px;
+    top: 300px;
+    left: 710px;
+    color: var(--secondary);
+    font-size: 20px;
+    line-height: 60px;
   }
 /* this is banner section end */
+/* THIS IS SERVICES STYLE START */
+.services {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    margin-top: 55px;
+  }
+.services-img{
+    margin-top: 40px;
+}
+.services-img img{
+    max-width: 100%;
+    height: 308px;
+}
+.services-icon {
+    background-color: var(--gray);
+    width: 206px;
+    display: flex;
+    height: 50px;
+    font-size: 10px;
+    position: absolute;
+    margin-top: -72px;
+    margin-left: 227px;
+  }
+  .services-icon img {
+    width: 30px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+  #icon{
+    font-size: 10px;
+    font-weight: 500;
+  }
+  /* this is services section end  */
+  /* this is about section start  */
+  .about-section{
+    width: 100%;
+    margin-top: 80px;
+  }
+  .about{
+    display: flex;
+  }
+  .about-img{
+    width: 685px;
+    height: 685px;
+  }
+  .about-img img{
+    max-width: 100%;
+  }
+  .about-title {
+    width: 685px;
+    height: 685px;
+    margin: 30px;
+    line-height: 30px;
+  }
+  .about-title p{
+    margin-top: 30px;
+  }
+  .about-section h1{
+    margin-top: 25px;
+  }
+  /* this is about section end  */
+  /* this is contact section start  */
+  .contact-section{
+    width: 100%;
+    height: 164px;
+    background-color: var(--secondary);
+    margin-top: -40px;
+  }
+  .contact{
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-title {
+    color: var(--white);
+    font-size: 24px;
+    margin-top: 58px;
+    font-weight: 600;
+  }
+  .contact-number{
+    color: var(--white);
+    margin-top: 37px;
+    line-height: 38px;
+    font-size: 38px;
+    margin-right: 50px;
+    font-weight: 700;
+  }
+  .contact-img {
+    margin-top: 22px;
+    margin-right: 190px;
+  }
+  .contact-img img{
+    width: 100%;
+    height: 110px;
+  }
+  .contact-mail{
+  color: var(--white);
+  font-weight: 600;
+  margin-top: 60px;
+  text-align: center;
+  }
+  /* this is contact section end  */
+  /* testimoniem-section start  */
+  .testimoniem-section{
+    width: 100%;
+    background-color: var(--secondary);
+    margin-top: 50px;
+    height: 708px;
+  }
+  .testimoniem{
+    display: flex;
+  }
+  .testimoniem-title{
+    color: var(--white);
+    width: 600px;
+  }
+  .testimoniem-title h5 {
+    margin-top: 88px;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .testimoniem-title h4 {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 38px;
+}
+  .testimoniem-title p{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-weight: 400;
+    line-height: 38px;
+  }
+  .testimoniem-img{
+    width: 795px;
+    height: 668px;
+    margin: 20px;
+  }
+  .testimoniem-img img{
+    max-width: 100%;
+  }
+  /* this is testimoniem section end  */
+  .bussness-section{
+    width:100%;
+    background-image: url(images/banner/developer2.jpg);
+    height: 467px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .bussness-title {
+    color: var(--white);
+    position: absolute;
+    margin-top: 155px;
+    font-size: 31px;
+    margin-left: 415px;
+    text-align: center;
+}
+.header-b {
+  margin-top: 280px;
+  margin-left: 604px;
+  background-color: var(--dark-gray);
+  padding: 10px 20px;
+  box-shadow: 2px 3px var(--gray);
+  border-radius: 10px;
+}
+/* this is bussness section end  */
+/* this is company section start style  */
+.company{
+  width: 100%;
+  background-color: var(--secondary);
+  height: 340px;
+  margin-top: 50px;
+}
+.company-2{
+  display: flex;
+}
+.company-about{
+  width: 45%;
+  margin: 50px;
+}
+.social-icon{
+  margin-top: 60px;
+}
+.company-about h3{
+  font-size: 30px;
+  color: var(--white);
+}
+
+.company-about p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--white);
+}
+.social-icon img{
+  width: 49px;
+  height: 49px;
+}
+.company-about h5{
+  color: var(--white);
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* this is company section end  */
+
+
+
+
+
+
 
